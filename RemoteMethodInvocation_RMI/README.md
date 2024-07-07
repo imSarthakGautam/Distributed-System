@@ -62,3 +62,25 @@ The is given the 6 steps to write the RMI program.
 6. Create and start the client application
 
 ![RMI_Working](rmi_working.jpg)
+
+## In terminal after codes
+
+1. compile the Java Classes
+```javac RemoteInterface.java RemoteInterfaceImpl.java RMIServer.java RMIClient.java Main.java
+```
+
+2. Start RMI Registry
+```start rmiregistry
+```
+
+3. Run the RMI Server
+```
+java RMIServer
+```
+
+4. Run the RMI Client (via Main)
+```
+java Main
+```
+
+

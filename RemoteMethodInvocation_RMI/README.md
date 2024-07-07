@@ -39,7 +39,7 @@ The skeleton is an object, acts as a gateway for the **server side object.** All
 2. It invokes the method on the actual remote object, and
 3. It writes and transmits (marshals) the result to the caller.
 
-![Stub_and_Skeleton](studbandskeleton.jpg)
+![Stub_and_Skeleton](https://static.javatpoint.com/images/rmi/stubandskeleton.jpg)
 
 ### Why RMI is known as Distributed Application/ Requirements for distributed Applications
 If any application performs these tasks, it can be distributed application.

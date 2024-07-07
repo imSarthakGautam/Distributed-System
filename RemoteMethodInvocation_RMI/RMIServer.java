@@ -1,3 +1,7 @@
+/*
+The server-side setup involves creating an instance of the implementation class, exporting it to the RMI runtime, and binding it to the RMI registry.
+*/
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -26,3 +30,15 @@ public class RMIServer {
         }
     }
 }
+
+//NEXT STEPS: In terminal
+
+//---------compile
+//javac RemoteInterface.java RemoteInterfaceImpl.java RMIServer.java
+
+//-------Start RMI Registry
+//start rmiregistry
+
+//--------Run the server
+//java RMIServer
+

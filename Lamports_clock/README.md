@@ -1,15 +1,25 @@
-# Lamport's clock 
+# Lamport's clock Implementation
+
+## Time in Distributed System
+- Distributed System doesn't have global physical time, each machine has it's own clock providing physical time
+
+- However multiple processes in a distributed system need synchronization to agree on ordering of events or resource sharing.
+
+## Logical Clock
+Mechanism for capturing causal and chronological relationships in distributed system. here ordering of events is more important than acutal time durations in real world.
+
+
+## what is a Logical Time ?
+Logical time is a numerical value that increases as events occur, ensuring a partial ordering of events
+
+## Lamport's Clock
 
 Lamport's Clock is a logical clock algorithm used in distributed systems to order events without relying on physical clocks. 
- It was introduced by Leslie Lamport in 1978 to provide a way to determine the sequence of events in a distributed system where there is no global clock and communication delays can vary.
 
 - It is widely used for it's simplicity and lack of need for synchronization.
 
-## what is a Logical Time 
-
 - In distributed systems, Instead of relying on physical time, Lamport's Clock assigns a logical timestamp to each event.
 
-Logical time is a numerical value that increases as events occur, ensuring a partial ordering of events
 
 **Events Ordering**
 Events within a single process are ordered sequentially.

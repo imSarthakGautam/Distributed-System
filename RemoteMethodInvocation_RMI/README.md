@@ -66,11 +66,14 @@ The is given the 6 steps to write the RMI program.
 ## In terminal after codes
 
 1. compile the Java Classes
-```javac RemoteInterface.java RemoteInterfaceImpl.java RMIServer.java RMIClient.java Main.java
+```
+javac RemoteInterface.java RemoteInterfaceImpl.java RMIServer.java RMIClient.java Main.java
+
 ```
 
 2. Start RMI Registry
-```start rmiregistry
+```
+start rmiregistry
 ```
 
 3. Run the RMI Server

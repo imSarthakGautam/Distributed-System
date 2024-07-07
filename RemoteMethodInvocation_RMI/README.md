@@ -61,3 +61,4 @@ The is given the 6 steps to write the RMI program.
 5. Create and start the remote application
 6. Create and start the client application
 
+![RMI_Working](rmi_working.jpg)

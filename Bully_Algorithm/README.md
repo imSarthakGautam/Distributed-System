@@ -11,13 +11,13 @@ In a scenario where the leader fails, the system must detect this failure and el
 
 ## Key Concepts of Bully Algorithm
 
-# Leader
+### Leader
 In the context of distributed systems, a leader (or coordinator) is a designated node or process responsible for managing and coordinating specific tasks or functions across the entire system, maintaining consistency, resolving conflicts and driving consensus.
 
-# Election Trigger
+### Election Trigger
 An election can be triggered if a node detects that the coordinator has failed (e.g., it doesn’t respond to a heartbeat message).
 
-# Process IDs
+### Process IDs
 
 Each process has a unique identifier (ID), and it’s assumed that these IDs are known to all processes. The process with the highest ID is the one that should be elected as the coordinator.
 

@@ -26,23 +26,27 @@ Each process has a unique identifier (ID), and it’s assumed that these IDs are
 
 ### Step 1: Election Initiation:
  When a process detects that the coordinator has failed, it initiates an election by sending an election message to all processes with higher IDs.  
+
   `Suppose the coordinator was process 5.`
 
 ### Step 2: Response Handling:
  If a process receives an election message and has a higher ID, it responds to the initiating process and starts its own election.  
+
   `Process 3 detects the failure and starts an election. It sends an election message to processes 4 and 5.`
 
 ### Step 3: No Higher Response:
- If a process doesn’t receive any response from higher ID processes, it declares itself the coordinator and sends a coordinator message to all other processes.
- `Process 4 receives the election message from process 3 and responds because it has a higher ID.`
- `Process 5 is down, so it does not respond.`
+ If a process doesn’t receive any response from higher ID processes, it declares itself the coordinator and sends a coordinator message to all other processes.  
 
- `Process 4, upon receiving an election message, sends its own election message to process 5.`
- `Since process 5 is down, process 4 does not receive any response.`
- `Process 4 then declares itself as new co-ordinator`
+`Process 4 receives the election message from process 3 and responds because it has a higher ID.`  
+`Process 5 is down, so it does not respond.`
+
+`Process 4, upon receiving an election message, sends its own election message to process 5.`  
+`Since process 5 is down, process 4 does not receive any response.` 
+`Process 4 then declares itself as new co-ordinator`
 
 ### Step 4: Receiving Coordinator Message: 
  When a process receives a coordinator message, it updates its coordinator information to the ID specified in the message.
+ 
  ` All processes, upon receiving the coordinator message from process 4, update their coordinator information to process 4.`
 
  ## Pseudocode
